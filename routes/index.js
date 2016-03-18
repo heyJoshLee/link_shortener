@@ -37,7 +37,7 @@ router.get("/:link", function(req, res, next) {
 
         var url = new Url({
           original_url: formatUrl(input),
-          short_url: doc.length +1
+          short_url: "ls-jl.herokuapp.com/" + (doc.length +1)
         });
 
         url.save(function(err, doc) {
