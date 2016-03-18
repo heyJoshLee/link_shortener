@@ -23,7 +23,7 @@ router.get('/', function(req, res, next) {
 
 router.get("/:link", function(req, res, next) {
   var input = req.params.link;
-  Url.find({short_url: input}, function(err, doc) {
+  Url.find({short_url: "ls-jl.herokuapp.com/" + input}, function(err, doc) {
     if(doc[0] && doc[0].short_url) {
       console.log("Going to :" + doc[0].original_url );
       console.log(doc[0].original_url);
