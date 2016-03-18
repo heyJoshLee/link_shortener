@@ -7,7 +7,7 @@ var bodyParser = require('body-parser');
 var mongoose = require("mongoose");
 
 
-mongoose.connect(process.env.mongo_url);
+mongoose.connect(process.env.MONGOLAB_URI);
 
 var Schema = mongoose.Schema;
 
