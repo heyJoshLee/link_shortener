@@ -7,7 +7,7 @@ var bodyParser = require('body-parser');
 var mongoose = require("mongoose");
 
 
-mongoose.connect("mongodb://localhost/link_shortener");
+mongoose.connect(process.env.mongo_url);
 
 var Schema = mongoose.Schema;
 
