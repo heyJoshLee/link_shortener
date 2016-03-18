@@ -18,7 +18,7 @@ function formatUrl(url) {
 
 /* GET home page. */
 router.get('/', function(req, res, next) {
-  res.render('index', { title: 'Express' });
+  res.render('index', { title: 'Link Shortener' });
 });
 
 router.get("/:link", function(req, res, next) {
